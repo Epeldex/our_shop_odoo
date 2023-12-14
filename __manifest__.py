@@ -4,15 +4,18 @@
 {
     'name': 'Our Shop',
     'version': '1.0',
-    'category': 'Hidden',
-    'sequence': 9001,
-    'description': """
-This module allows to manage onboardings and their progress
-================================================================================
-    """,
-    'depends': ['base'],
-    'installable': True,
-    'data': [
+    'category': 'Productivity/Notes',
+    'website': 'https://www.odoo.com/app/notes',
+    'summary': 'Organize your work with memos',
+    'depends': [
+
     ],
+    'data': [
+
+    ],
+    'demo': [
+
+    ],
+
     'license': 'LGPL-3',
 }
