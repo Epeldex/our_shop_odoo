@@ -16,3 +16,5 @@ class Product(models.Model):
 
     supplier_id = fields.Many2one(comodel_name="our_shop.supplier", string="Supplier")
     tag_id = fields.Many2one(comodel_name="our_shop.tag", string="Tag")
+
+    product_productsBought = fields.One2many(comodel_name="our_shop.ProductsBought", inverse_name="", string="ProductsBought")

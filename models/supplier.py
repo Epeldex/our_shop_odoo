@@ -11,4 +11,6 @@ class Supplier(models.Model):
     zip = fields.Integer(string='ZIP Code')
     create_timestamp = fields.Datetime(string='Create Timestamp')
 
+
     supplier_products = fields.One2many(comodel_name="our_shop.product", inverse_name="product_id", string="Products")
+
