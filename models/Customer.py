@@ -12,3 +12,4 @@ class Customer(models.Model):
     city = fields.Char(string='City')
     phone = fields.Char(string='Phone Number')
     balance = fields.Float(string='Balance')
+

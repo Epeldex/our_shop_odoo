@@ -11,3 +11,4 @@ class Supplier(models.Model):
     zip = fields.Integer(string='ZIP Code')
     create_timestamp = fields.Datetime(string='Create Timestamp')
 
+
