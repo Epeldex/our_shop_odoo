@@ -1,6 +1,7 @@
 from odoo import models, fields
 
 class ProductsBought(models.Model):
+
     _name = 'entities.products_bought'
     _description = 'Information about products that were bought'
 
