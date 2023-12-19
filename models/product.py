@@ -13,3 +13,8 @@ class Product(models.Model):
     description = fields.Text(string='Description')
     price = fields.Float(string='Price')
     create_timestamp = fields.Datetime(string='Create Timestamp', default=fields.Datetime.now, readonly=True)
+
+    supplier_id = fields.Many2one(comodel_name="our_shop.supplier", string="Supplier")
+    tag_id = fields.Many2one(comodel_name="our_shop.tag", string="Tag")
+
+    product_productsBought = fields.One2many(comodel_name="our_shop.ProductsBought", inverse_name="", string="ProductsBought")

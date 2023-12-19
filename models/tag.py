@@ -9,3 +9,7 @@ class Tag(models.Model):
     label = fields.Char(string='Label')
     active = fields.Boolean(string='Active')
     create_timestamp = fields.Datetime(string='Create Timestamp')
+
+
+    tag_products = fields.One2many(comodel_name="our_shop.product", inverse_name="product_id", string="Products")
+
