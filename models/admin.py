@@ -1,7 +1,8 @@
 from odoo import api, fields, models
 
-class admin(models.Model):
-    _name = 'our-shop.user'
+
+class Admin(models.Model):
+    _name = 'shop.admin'
     _description = 'Admin class'
     
     

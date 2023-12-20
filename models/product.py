@@ -1,7 +1,8 @@
 from odoo import models, fields, api
 
+
 class Product(models.Model):
-    _name = 'your_module.product'
+    _name = 'shop.product'
     _description = 'Product Class'
 
     product_id = fields.Integer(string='Product ID', readonly=True)
@@ -14,7 +15,8 @@ class Product(models.Model):
     price = fields.Float(string='Price')
     create_timestamp = fields.Datetime(string='Create Timestamp', default=fields.Datetime.now, readonly=True)
 
-    supplier_id = fields.Many2one(comodel_name="our_shop.supplier", string="Supplier")
-    tag_id = fields.Many2one(comodel_name="our_shop.tag", string="Tag")
+    supplier_id = fields.Many2one(comodel_name='shop.supplier', string='Supplier')
+    tag_id = fields.Many2one(comodel_name='shop.tag', string='Tag')
 
-    product_productsBought = fields.One2many(comodel_name="our_shop.ProductsBought", inverse_name="", string="ProductsBought")
+    product_productsBought = fields.One2many(comodel_name='shop.products_bought', inverse_name='product_id',
+                                             string='ProductsBought')

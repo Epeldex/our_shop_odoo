@@ -1,1 +1,1 @@
-from . import admin, Customer, product, ProductsBought, supplier, tag, user
+from . import user, admin, customer, product, products_bought, supplier, tag

@@ -1,7 +1,8 @@
 from odoo import api, fields, models
 
-class user(models.Model):
-    _name = 'our-shop.user'
+
+class User(models.Model):
+    _name = 'shop.user'
     _description = 'User class'
 
     user_id = fields.Integer(string='User ID', readonly=True)
