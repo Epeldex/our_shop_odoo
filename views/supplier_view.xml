@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+
+        <!-- Supplier List View -->
+        <record model="ir.ui.view" id="view_supplier_list">
+            <field name="name">Supplier List</field>
+            <field name="model">shop.supplier</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Client List">
+                    <field name="name"/>
+                    <field name="phone"/>
+                    <field name="country"/>
+                    <field name="zip"/>
+                    <field name="create_timestamp"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Supplier Form View -->
+        <record model="ir.ui.view" id="view_supplier_form">
+            <field name="name">Supplier Form</field>
+            <field name="model">shop.supplier</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Supplier Form">
+                    <group colspan="5">
+                        <group colspan="2" col="2">
+                            <separator string="Supplier Data" colspan="2"/>
+                            <field name="name"/>
+                            <field name="phone"/>
+                            <field name="country"/>
+                            <field name="zip"/>
+                            <field name="create_timestamp"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Supplier Search View -->
+        <record model="ir.ui.view" id="view_supplier_search">
+            <field name="name">Supplier Search</field>
+            <field name="model">shop.supplier</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Supplier Search">
+                    <field name="name"/>
+                    <field name="country"/>
+                    <field name="phone"/>
+                    <field name="zip"/>
+                    <field name="create_timestamp"/>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="categoria_modulo_shop" model="ir.module.category">
+            <field name="name">Acceso a Our Shop</field>
+        </record>
+        <record id="group_admin" model="res.groups">
+            <field name="name">Our Shop / Admin</field>
+            <field name="category_id" ref="categoria_modulo_shop"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="group_client" model="res.groups">
+            <field name="name">Our Shop / Client</field>
+            <field name="category_id" ref="categoria_modulo_shop"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+    </data>
+</odoo>
+
+
