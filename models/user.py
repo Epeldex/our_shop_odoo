@@ -9,6 +9,8 @@ class User(models.Model):
     username = fields.Text(string='Username')
     password = fields.Text(string='Password')
     active = fields.Boolean(string="Active")
+    
+    
 
 
 

@@ -9,6 +9,9 @@ This module allows to manage onboardings and their progress
     """,
     'depends': ['base'],
     'installable': True,
-    'data': [],
+    'data': [
+        #everrything
+        'views/tag.xml'
+        ],
     'license': 'LGPL-3',
 }

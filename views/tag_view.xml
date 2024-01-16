@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_tag_list">
+            <field name="name">Tags List</field>
+            <field name="model">shop.tag</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+
+                <tree string="Tag list">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="label"/>
+                    <field name="active"/>
+                    <field name="create_timestamp"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_tag_form">
+            <field name="name">Tag</field>
+            <field name="model">shop.tag</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+
+                <form string="Tag form">
+                    <group colspan="8">
+                        <group colspan="2" col="2">
+                            <separator string="Tag info" colspan="2"/>
+                                <field name="name"/>
+                                <field name="type"/>
+                                <field name="label"/>
+                                <field name="active"/>
+                                <field name="create_timestamp"/>
+
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_tag_search">
+            <field name="name">Tag search</field>
+            <field name="model">shop.tag</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Tag search">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="label"/>
+                    <field name="active"/>
+                    <field name="create_timestamp"/>
+                    
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

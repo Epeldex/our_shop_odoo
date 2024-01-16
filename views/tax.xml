@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window"
+                id="tag_action">
+            <field name="name">Tag Window</field>
+            <field name="res_model">shop.tag</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- actions -->
+        <menuitem name="Tag Management"
+                  id="tag_menu"
+                  parent="shop_menu"
+                  action="tag_action"/>
+    </data>
+</odoo>
