@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem name="Our Shop" id="shop_menu"/>
+    </data>
+</odoo>

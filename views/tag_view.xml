@@ -25,11 +25,11 @@
                     <group colspan="8">
                         <group colspan="2" col="2">
                             <separator string="Tag info" colspan="2"/>
-                                <field name="name"/>
-                                <field name="type"/>
-                                <field name="label"/>
-                                <field name="active"/>
-                                <field name="create_timestamp"/>
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="label"/>
+                            <field name="active"/>
+                            <field name="create_timestamp"/>
 
                         </group>
                     </group>
@@ -47,7 +47,7 @@
                     <field name="label"/>
                     <field name="active"/>
                     <field name="create_timestamp"/>
-                    
+
                 </search>
             </field>
         </record>

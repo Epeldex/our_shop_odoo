@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window"
+                id="product_action">
+            <field name="name">Product Window</field>
+            <field name="res_model">shop.product</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- actions -->
+        <menuitem name="Product Management"
+                  id="product_menu"
+                  parent="shop_menu"
+                  action="product_action"/>
+    </data>
+</odoo>

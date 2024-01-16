@@ -9,9 +9,15 @@ This module allows to manage onboardings and their progress
     """,
     'depends': ['base'],
     'installable': True,
-    'data': [
-        #everrything
-        'views/tag.xml'
-        ],
+    'data': ['security/our_shop_security.xml',
+             'security/ir.model.access.csv',
+             'views/views.xml',
+             'views/supplier.xml',
+             'views/product.xml',
+             'views/tag.xml',
+             'views/supplier_view.xml',
+             'views/product_view.xml',
+             'views/tag_view.xml'
+             ],
     'license': 'LGPL-3',
 }

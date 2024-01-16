@@ -1,0 +1,66 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_product_list">
+            <field name="name">Products List</field>
+            <field name="model">shop.product</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Content list">
+                    <field name="product_number"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="other_info"/>
+                    <field name="weight"/>
+                    <field name="description"/>
+                    <field name="price"/>
+                    <field name="create_timestamp"/>
+                    <field name="supplier_id"/>
+                    <field name="tag_id"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_product_form">
+            <field name="name">Products Form</field>
+            <field name="model">shop.product</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Content form">
+                    <group colspan="8">
+                        <group colspan="2" col="2">
+                            <separator string="Content data" colspan="2"/>
+                            <field name="product_number"/>
+                            <field name="brand"/>
+                            <field name="model"/>
+                            <field name="other_info"/>
+                            <field name="weight"/>
+                            <field name="description"/>
+                            <field name="price"/>
+                            <field name="create_timestamp"/>
+                            <field name="supplier_id"/>
+                            <field name="tag_id"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_product_search">
+            <field name="name">Products Search</field>
+            <field name="model">shop.product</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Content search">
+                    <field name="product_number"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="other_info"/>
+                    <field name="weight"/>
+                    <field name="description"/>
+                    <field name="price"/>
+                    <field name="create_timestamp"/>
+                    <field name="supplier_id"/>
+                    <field name="tag_id"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

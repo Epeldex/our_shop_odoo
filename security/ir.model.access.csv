@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_admin,Aceso de administrador,model_shop_product,group_admin,1,1,1,1
+access_product_cliente,Acceso de cliente,model_shop_product,group_client,1,,,
+access_supplier_admin,Aceso de administrador,model_shop_supplier,group_admin,1,1,1,1
+access_supplier_cliente,Acceso de cliente,model_shop_supplier,group_client,1,,,
+access_products_bought_admin,Aceso de administrador,model_shop_products_bought,group_admin,1,1,1,1
+access_products_bought_cliente,Acceso de cliente,model_shop_products_bought,group_client,1,,,
+access_tag_admin,Aceso de administrador,model_shop_tag,group_admin,1,1,1,1
+access_tag_cliente,Acceso de cliente,model_shop_tag,group_client,1,,,
+access_customer_admin,Aceso de administrador,model_shop_customer,group_admin,1,1,1,1
+access_customer_cliente,Acceso de cliente,model_shop_customer,group_client,1,,,

@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window"
+                id="supplier_action">
+            <field name="name">Supplier Window</field>
+            <field name="res_model">shop.supplier</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- actions -->
+        <menuitem name="Supplier Management"
+                  id="supplier_menu"
+                  parent="shop_menu"
+                  action="supplier_action"/>
+    </data>
+</odoo>
