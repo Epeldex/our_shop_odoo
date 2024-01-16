@@ -19,5 +19,6 @@ This module allows to manage onboardings and their progress
              'views/product_view.xml',
              'views/tag_view.xml'
              ],
+    'icon' : '/shop/static/description/icon.png',
     'license': 'LGPL-3',
 }
