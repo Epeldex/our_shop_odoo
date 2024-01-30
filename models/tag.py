@@ -13,8 +13,18 @@ class Tag(models.Model):
     active = fields.Boolean(string='Active')
     create_timestamp = fields.Datetime(string='Create Timestamp')
     tag_products = fields.One2many(comodel_name='shop.product', inverse_name='product_id', string='Products')
+    image = fields.Binary(string='Image URL', help='URL to the custom image for the tag')
+    
+     # Override Copy Method
+    def copy(self, default=None):
+        default = dict(default or {})
+        # Modify a specific field, e.g., product_number
+        modified_tag_type = self.type + "_copy"  # This is an example
+        default['type'] = modified_tag_type
+        return super(Tag, self).copy(default)
     
     
+    # Validations for every field    
     @api.constrains('label')
     def check_label_is_filled(self):
         for record in self:

@@ -5,7 +5,7 @@
                 id="tag_action">
             <field name="name">Tag Window</field>
             <field name="res_model">shop.tag</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,kanban</field>
         </record>
         <!-- actions -->
         <menuitem name="Tag Management"
