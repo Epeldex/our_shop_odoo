@@ -17,6 +17,33 @@
             </field>
         </record>
 
+
+        <record id="supplier-kanban-view" model="ir.ui.view">
+            <field name="name">supplier.kanban.view</field>
+            <field name="model">shop.supplier</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="id"/>
+                    <field name="name"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="o_kanban_image">
+                                    <img t-att-src="kanban_image('shop.supplier','image',record.id.raw_value)"/>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="name"/>
+                                    </strong>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
         <!-- Supplier Form View -->
         <record model="ir.ui.view" id="view_supplier_form">
             <field name="name">Supplier Form</field>
@@ -26,6 +53,8 @@
                 <form string="Supplier Form">
                     <group colspan="5">
                         <group colspan="2" col="2">
+                            <field name="image" widget="image" class="oe_avatar" nolabel="1"/>
+
                             <separator string="Supplier Data" colspan="2"/>
                             <field name="name"/>
                             <field name="phone"/>
@@ -47,12 +76,13 @@
                 <search string="Supplier Search">
                     <field name="name"/>
                     <field name="country"/>
-                    <field name="phone"/>
+                    <field name="phone" placeholder="666666666"/>
                     <field name="zip"/>
                     <field name="create_timestamp"/>
                 </search>
             </field>
         </record>
+
 
     </data>
 </odoo>
