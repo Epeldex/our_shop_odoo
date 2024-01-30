@@ -15,6 +15,7 @@ class Product(models.Model):
     description = fields.Text(string='Description')
     price = fields.Float(string='Price')
     create_timestamp = fields.Datetime(string='Create Timestamp', default=fields.Datetime.now, readonly=True)
+    image = fields.Binary(string='Image URL', help='URL to the custom image for the product')
 
     supplier_id = fields.Many2one(comodel_name='shop.supplier', string='Supplier')
     tag_id = fields.Many2one(comodel_name='shop.tag', string='Tag')

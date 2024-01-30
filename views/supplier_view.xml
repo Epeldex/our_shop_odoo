@@ -53,8 +53,7 @@
                 <form string="Supplier Form">
                     <group colspan="5">
                         <group colspan="2" col="2">
-                            <field name="image" widget="image" class="oe_avatar" nolabel="1"/>
-
+                            <field name="image" widget="image" class="custom-right-indent" nolabel="1"/>
                             <separator string="Supplier Data" colspan="2"/>
                             <field name="name"/>
                             <field name="phone"/>

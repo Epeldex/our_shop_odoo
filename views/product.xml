@@ -5,7 +5,7 @@
                 id="product_action">
             <field name="name">Product Window</field>
             <field name="res_model">shop.product</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,kanban</field>
         </record>
         <!-- actions -->
         <menuitem name="Product Management"
